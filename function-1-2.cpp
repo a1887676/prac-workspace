@@ -2,7 +2,7 @@
 
 double array_mean(double array[], int n) {
 
-double mean = 0;
+double mean;
 double sum = 0;
 
 if(n<1){
@@ -14,6 +14,5 @@ for(int i=0; i<n;i++) {
 }
 
 mean = sum/n;
-//std::cout << array
 return mean;
 }

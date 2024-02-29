@@ -2,7 +2,7 @@
 
 int main() {
 
-double array_mean(double array[], int n);
+extern double array_mean(double array[], int n);
 
 double mainArray[] = {};
 int arraySize = sizeof(mainArray)/sizeof(mainArray[0]);
