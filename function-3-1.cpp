@@ -12,13 +12,24 @@ return false;
  }
 }
 
+if(n%2==0) {
+
 for(int i=1;i<n/2;i++) {
 if(array[i]==array[i-1] || array[i]<array[i-1]){
 return false;
  }
 }
+}
 
+if(n%2==1) {
+for(int i=1;i<n/2+1;i++) {
+if(array[i]==array[i-1] || array[i]<array[i-1]){
+return false;
+ }
+}    
+}
 
+//{1,2,1,2,1}
 
 return true;
 }

@@ -2,7 +2,7 @@
 
 int main() {
 
-bool is_fanarray(int array[], int n);
+extern bool is_fanarray(int array[], int n);
 
 int mainArray[] = {1, 2, 3, 2, 1};
 int arraySize = sizeof(mainArray)/sizeof(mainArray[0]);
