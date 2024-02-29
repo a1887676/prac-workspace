@@ -4,7 +4,7 @@ int main() {
 
 extern double array_mean(int array[], int n);
 
-double mainArray[] = {};
+int mainArray[] = {1,2};
 int arraySize = sizeof(mainArray)/sizeof(mainArray[0]);
 
 double result = array_mean(mainArray,arraySize);
