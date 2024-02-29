@@ -1,6 +1,6 @@
 #include <iostream>
 
-double array_mean(double array[], int n) {
+double array_mean(int array[], int n) {
 
 double mean;
 double sum = 0;
