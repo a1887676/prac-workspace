@@ -48,5 +48,5 @@ for(int i=0;i<4;i++) {
     }
 }
 
-std::cout << "0:" << countArray[0] << ";1:" << countArray[1] << ";2:" << countArray[2] << ";3:" << countArray[3] <<";4:" << countArray[4] <<";5:" << countArray[5] <<";6:" << countArray[6] <<";7:" << countArray[7] <<";8:" << countArray[8] <<";9:" << countArray[9] << std::endl;
+std::cout << "0:" << countArray[0] << ";1:" << countArray[1] << ";2:" << countArray[2] << ";3:" << countArray[3] <<";4:" << countArray[4] <<";5:" << countArray[5] <<";6:" << countArray[6] <<";7:" << countArray[7] <<";8:" << countArray[8] <<";9:" << countArray[9] << ";" << std::endl;
 }
