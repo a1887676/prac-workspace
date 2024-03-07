@@ -1,18 +1,15 @@
 #include <iostream>
 
-int main() {
+void print_scaled(int array[3][3],int scale) {
 
-extern void print_scaled(int array[3][3],int scale);
+for(int i=0;i<3;i++) {
+    for(int j=0;j<3;j++) {
+        array[i][j] = scale*array[i][j];
 
-int mainArray[3][3] = {
-{1,2,3},
-{4,5,6},
-{7,8,9}    
-};
+        std::cout << array[i][j] << " ";
+    
+    }
 
-int scaleNumber = 2;
-
-print_scaled(mainArray,scaleNumber);
-
-return 0;
+std::cout << std::endl;
+ }
 }
