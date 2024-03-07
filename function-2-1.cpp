@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 void print_binary_str(std::string decimal_number) {
 
@@ -22,11 +23,10 @@ base_tenNum = base_tenNum / 2;
 counter++;
  }
 
-for(int i=0;i<counter;i++) {
+for(int i=counter-1;i>-1;i--) {
 
 std::cout << base_twoArray[i];
 
 }
 std::cout << std::endl; 
-return 0;
 }
