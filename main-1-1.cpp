@@ -2,16 +2,15 @@
 
 int main() {
 
-extern int sum_diagonal(int array[4][4]);
+extern double arrayMin(double *array, int size);
 
-int mainArray[4][4] = {
-{1,2,3,4},
-{5,6,7,8},
-{9,10,11,12},
-{13,14,15,16} };
+double mainArray[5] = {1.0,2.0,3.0,4.0,5.0};
+int arraySize = sizeof(mainArray)/sizeof(mainArray[0]);
 
-int result = sum_diagonal(mainArray);
+double *p = &mainArray[0];
 
-std::cout << "diagonal sum is: " << result << std::endl;
+int result = arrayMin(p,arraySize);
+
+std::cout << result << std::endl;
 return 0;
 }

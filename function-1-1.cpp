@@ -1,17 +1,14 @@
 #include <iostream>
 
-int sum_diagonal(int array[4][4]) {
+double arrayMin(double* array, int size) {
 
-int sum = 0;
+double minVal = *array; 
 
-for(int i=0;i<4;i++) {
-    for(int j=0;j<4;j++){
-        if(i==j){
-            sum = sum + array[i][j];
-        }
-    }
-
+for(int i=0;i<size;i++) {
+if(*(array+i)<minVal) {
+    minVal = *(array+i);
+ } 
 }
 
-return sum;
+return minVal;
 }
