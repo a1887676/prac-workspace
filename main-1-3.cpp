@@ -9,7 +9,7 @@ int arraySize = sizeof(mainArray)/sizeof(mainArray[0]);
 double *p = &mainArray[0];
 
 
-duplicateArray(p,arraySize);
+double *pointer = duplicateArray(p,arraySize);
 
 return 0;
 }
