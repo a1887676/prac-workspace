@@ -20,7 +20,7 @@ return list1;
 
 PersonList shallowCopyCopyPersonList(PersonList pl) {
     PersonList shallowCopy;
-    PersonList* p = &pl
+    PersonList* p = &pl;
 
 shallowCopy.numPeople = pl.numPeople;
 shallowCopy.people = p;
@@ -29,5 +29,5 @@ shallowCopy.people = p;
   //  deepCopy.people[i] = pl.people[i];
 //}
 
-return deepCopy;
+return shallowCopy;
 }
