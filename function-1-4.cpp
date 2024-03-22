@@ -20,10 +20,9 @@ return list1;
 
 PersonList shallowCopyCopyPersonList(PersonList pl) {
     PersonList shallowCopy;
-    PersonList* p = &pl;
 
 shallowCopy.numPeople = pl.numPeople;
-shallowCopy.people = p;
+shallowCopy.people = pl.people;
 
 //for(int i=0;i<deepCopy.numPeople;i++) {
   //  deepCopy.people[i] = pl.people[i];
