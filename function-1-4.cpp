@@ -18,15 +18,11 @@ for(int i=0;i<n;i++) {
 return list1;    
 }
 
-PersonList shallowCopyCopyPersonList(PersonList pl) {
+PersonList shallowCopyPersonList(PersonList pl) {
     PersonList shallowCopy;
 
 shallowCopy.numPeople = pl.numPeople;
 shallowCopy.people = pl.people;
-
-//for(int i=0;i<deepCopy.numPeople;i++) {
-  //  deepCopy.people[i] = pl.people[i];
-//}
 
 return shallowCopy;
 }
