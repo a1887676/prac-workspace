@@ -1,22 +1,21 @@
 #include <iostream>
 #include <string>
 
-#include "Person.h"
+#include "StockItem.h"
 
 int main() {
 
-extern Person* createPersonArray(int n);
+StockItem s1();
 
-int size;
+std::cout << "Item 1 description: " << s1.get_description << std::endl;
+std::cout << "Item 1 code: " << s1.code_num << std::endl;
 
-std::cin >> size;
-std::cout << std::endl;
+StockItem s2(1234,water);
 
-Person* people = createPersonArray(size);
+std::cout << "Item 2 description: " << s2.get_description << std::endl;
+std::cout << "Item 2 code: " << s2.code_num << std::endl;
 
-for (int i=0; i<size; i++) {
-        std::cout << "Name - " << people[i].name << ", Age - " << people[i].age << std::endl;
-    }
 
-return 0;
+
+
 }
