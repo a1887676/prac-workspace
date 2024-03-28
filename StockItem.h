@@ -19,6 +19,6 @@ std::string get_description();
 int get_item_code();       
 ~StockItem();              
 
-}
+};
 
 #endif
