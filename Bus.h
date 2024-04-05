@@ -3,7 +3,7 @@
 
 class Bus : public Vehicle {
     public:
-        using Vehicle::Vehicle
+        using Vehicle::Vehicle;
         int getParkingDuration() const;
 };
 
