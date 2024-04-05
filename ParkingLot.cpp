@@ -5,7 +5,7 @@ ParkingLot::ParkingLot() : maxCapacity(0), currentCount(0), vehicles(new Vehicle
 
 ParkingLot::ParkingLot(int maxCapacity) : maxCapacity(maxCapacity), currentCount(0), vehicles(new Vehicle*[maxCapacity]) {}
 
-void ParkingLot::parkVechicle(Vehicle* newVehicle) {
+void ParkingLot::parkVehicle(Vehicle* newVehicle) {
     if(currentCount<maxCapacity) {
         vehicles[currentCount++] = newVehicle;
     }else{

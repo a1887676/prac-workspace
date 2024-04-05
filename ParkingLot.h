@@ -13,7 +13,7 @@ class ParkingLot {
         ParkingLot();
         ParkingLot(int maxCapacity);
         int getCount() const;
-        void parkVechicle(Vehicle* newVehicle);
+        void parkVehicle(Vehicle* newVehicle);
         void unparkVehicle(int id);
         virtual ~ParkingLot();
 };
