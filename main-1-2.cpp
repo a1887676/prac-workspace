@@ -35,7 +35,7 @@ while(lot1.getCount()<10) {
         std::cout << "Not a valid type" << std::endl;
         break;
     }
-lot1.parkVechicle(newVehicle);
+lot1.parkVehicle(newVehicle);
 }
 int unparkVehicleID;
 std::cout << "ID to unpark: ";
