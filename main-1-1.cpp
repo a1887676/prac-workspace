@@ -9,11 +9,11 @@ int main() {
 int numMB, numCar, numBus;
 
 std::cout << "Number of Motorbikes: ";
-std:: >> numMB;
+std::cin >> numMB;
 std::cout << "Number of Cars: ";
-std:: >> numCar;
+std::cin >> numCar;
 std::cout << "Number of Buses: ";
-std:: >> numBus;
+std::cin >> numBus;
 
 int totalVehicles = numBus + numCar + numMB;
 Vehicle* VehicleArr[totalVehicles];
@@ -25,7 +25,7 @@ for(int i=0;i<totalVehicles;i++) {
 
     char vehicleType;
     std::cout << "Enter type of vehicle C = Car, B = Bus, M = Motorbike : ";
-    std::cint >> vehicleType;
+    std::cin >> vehicleType;
 
     switch(vehicleType) {
         
