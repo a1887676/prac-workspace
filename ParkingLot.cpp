@@ -9,7 +9,7 @@ void ParkingLot::parkVehicle(Vehicle* newVehicle) {
     if(currentCount<maxCapacity) {
         vehicles[currentCount++] = newVehicle;
     }else{
-        std::cout << "The lot of full" << std::endl;
+        std::cout << "The lot is full" << std::endl;
     }
 }
 
