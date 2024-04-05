@@ -6,6 +6,7 @@
 class Bus : public Vehicle {
     public:
         using Vehicle::Vehicle;
+         ~Bus();
         int getParkingDuration() const;
 };
 

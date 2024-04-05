@@ -6,6 +6,7 @@
 class Motorbike : public Vehicle {
     public:
         using Vehicle::Vehicle;
+        ~Motorbike();
         int getParkingDuration() const;
 };
 
