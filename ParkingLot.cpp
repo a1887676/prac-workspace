@@ -36,3 +36,12 @@ ParkingLot::~ParkingLot() {
     }
  delete[] vehicles;   
 }
+
+int ParkingLot::countOverstayingVehicles(maxParkingDuration) const {
+    int k=0;
+    for(int i=0;i<currentCount;i++) {
+        if(vehicles[i]->getParkingDuration>maxParkingDuration)
+        k++;
+    }
+    return k;
+}

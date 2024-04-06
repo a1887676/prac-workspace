@@ -9,6 +9,7 @@ class ParkingLot {
         int maxCapacity;
         int currentCount;
 
+
     public:
         ParkingLot();
         ParkingLot(int maxCapacity);
@@ -16,6 +17,7 @@ class ParkingLot {
         void parkVehicle(Vehicle* newVehicle);
         void unparkVehicle(int id);
         virtual ~ParkingLot();
+        int countOverstayingVehicles(int maxParkingDuration) const;
 };
 
 #endif
