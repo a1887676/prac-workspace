@@ -8,7 +8,7 @@ class ParkingLot {
         Vehicle** vehicles;
         int maxCapacity;
         int currentCount;
-        int maxParkingDuration;
+    
 
 
     public:
@@ -18,7 +18,7 @@ class ParkingLot {
         void parkVehicle(Vehicle* newVehicle);
         void unparkVehicle(int id);
         virtual ~ParkingLot();
-        int countOverstayingVehicles(int maxParkingDuration) const;
+        int countOverstayingVehicles(int maxParkingDuration);
 };
 
 #endif
