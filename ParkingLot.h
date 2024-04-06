@@ -8,6 +8,7 @@ class ParkingLot {
         Vehicle** vehicles;
         int maxCapacity;
         int currentCount;
+        int maxParkingDuration;
 
 
     public:
