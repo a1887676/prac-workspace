@@ -1,17 +1,17 @@
 #include "Tesla.h"
 
 Tesla::Tesla() : model(0), batteryPercentage(0) {}
-Tesla::Tesla(char model, float batteryPercentage) : model(model) {
-    if(batteryPercentage>100) {
-        this->batteryPercentage=100;
+Tesla::Tesla(char model, float battery) : model(model) {
+    if(battery>100) {
+        batteryPercentage=100;
     }
 
-    else if(batteryPercentage<0) {
-        this->batteryPercentage=0;
+    else if(battery<0) {
+        batteryPercentage=0;
     }
 
     else if(batteryPercentage>0 && batteryPercentage<100) {
-        this->batteryPercentage=batteryPercentage;
+        batteryPercentage=battery;
     }
 } 
 
