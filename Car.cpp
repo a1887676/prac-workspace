@@ -16,4 +16,12 @@ int Car::get_emissions() {
     return emissions;
 }
 
+void Car::set_emissions(int emissions) {
+    this->emissions=emissions;
+}
+
+void Car::set_price(int price) {
+    this->price=price;
+}
+
 Car::~Car() {}
