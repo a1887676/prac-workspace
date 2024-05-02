@@ -6,11 +6,11 @@ Tesla::Tesla(char model, float batteryPercentage) : model(model) {
         this->batteryPercentage=100;
     }
 
-    if(batteryPercentage<0) {
+    else if(batteryPercentage<0) {
         this->batteryPercentage=0;
     }
 
-    if(batteryPercentage>0 && batteryPercentage<100) {
+    else(batteryPercentage>0 && batteryPercentage<100) {
         this->batteryPercentage=batteryPercentage;
     }
 } 
