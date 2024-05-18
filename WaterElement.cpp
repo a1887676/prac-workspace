@@ -16,3 +16,11 @@ char WaterElement::getWeakness() {
 char WaterElement::getImmunity() {
     return immunity;
 }
+
+virtual void WaterElement::attack(Pokemon* enemy,Pokemon* player) {
+    
+    int remainingHealth = enemy->getHealth() - (player->getDamage())*(enemy->getDefence())*(enemy->damageMultiplier());
+    
+    enemy->setHealth(remainingHealth);
+}
+

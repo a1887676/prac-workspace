@@ -9,7 +9,7 @@ class WaterElement : public Pokemon {
    public:
    WaterElement();
 
-   virtual void attack(Pokemon* enemy,int damage) = 0;
+   virtual void attack(Pokemon* enemy,Pokemon* player);
    double damageMultiplier(Pokemon* enemy, int damage);
    
    char getWeakness();

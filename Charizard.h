@@ -2,11 +2,11 @@
 #define FIREELEMENT_H
 
 class Charizard : public FireElement {
-    private:
+   private:
 
 
    public:
-   
+   Charizard();
 
        
 };
