@@ -1,0 +1,18 @@
+#include "Pokemon.h"
+#include "WaterElement.h"
+
+WaterElement::WaterElement(): weakness(E), immunity(F){}
+
+double WaterElement::damageMultiplier() {
+   if(this->weakness==W){
+    return 1.5
+   }
+   return 1;
+}
+   
+char WaterElement::getWeakness() {
+    return weakness;
+}
+char WaterElement::getImmunity() {
+    return immunity;
+}
