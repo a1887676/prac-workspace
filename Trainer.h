@@ -5,15 +5,17 @@
 #include <string>
 
 class Trainer {
-   private:
+   protected:
    Pokemon** Pokedex;
-   int currentPokemon;
+   Pokemon* selectedPokemon;
+   int currentPokemon; 
     
    public:
    Trainer();
    void addPokemon(Pokemon* newPokemon);
    void removePokemon(std::string name);
    virtual ~Trainer();
+   void choosePokemon()
    
 };
 

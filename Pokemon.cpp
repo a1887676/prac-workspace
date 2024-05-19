@@ -2,13 +2,13 @@
 #include <iostream>
 
 Pokemon::Pokemon() : health(0),defence(0),damage(0){}
-Pokemon::Pokemon(int health, int defence, int damage, char element) : health(health),defence(defence){}
+Pokemon::Pokemon(int health, double defence, int damage) : health(health),defence(defence), damage(damage){}
 
 int Pokemon::getHealth() {
     return health;
 }
 
-int Pokemon::getDefence(){
+double Pokemon::getDefence(){
     return defence;
 }
     
@@ -20,7 +20,7 @@ void Pokemon::setHealth(int health) {
     this->health=health;
 }
     
-void Pokemon::setDefence(int defence){
+void Pokemon::setDefence(double defence){
     this->defence=defence;
 }
     

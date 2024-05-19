@@ -1,7 +1,7 @@
 #include "Trainer.h"
 #include <iostream>
 
-Trainer::Trainer(): maxPokemon(3),currentPokemon(0),Pokedex(new Pokemon*[3]){}
+Trainer::Trainer(): currentPokemon(0),selectedPokemon(nullptr),Pokedex(new Pokemon*[3]){}
 
 void Trainer::addPokemon(Pokemon* newPokemon){
     if(currentPokemon<3){
@@ -32,3 +32,29 @@ Trainer::~Trainer(){
     }
     delete[] Pokedex;
 }
+
+void Trainer::choosePokemon(){
+   int chosen;
+   int loop = 0;
+    while (loop == 0) {
+        std::cout << "Choose a Pokemon: 1 - " << Pokedex[0]->getName() << " 2 - " << Pokedex[1]->getName() << " 3 - " << Pokedex[2]->getName()<< ": ";
+        std::cin >> chosen;
+
+        if (chosen >= 1 && chosen <= 3) {
+            selectedPokemon = Pokedex[chosen - 1];
+            loop++; 
+        } else {
+            std::cout << "Invalid choice" << std::endl;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

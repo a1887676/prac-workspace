@@ -7,15 +7,17 @@
 
 class Battle {
    private:
-   Pokemon** Pokedex;
+   Trainer player;
    Pokemon* enemy;
 
    public:
    Battle();
-   Battle(Pokemon** Pokedex, Pokemon* enemy);
+   Battle(Trainer player, Pokemon* enemy);
    void playerTurn();
    void computerTurn();
+   void commenceBattle(Trainer player, Pokemon* enemy);
    std::string findWinner();
+   
 
 };
 

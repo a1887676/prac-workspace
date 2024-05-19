@@ -14,11 +14,11 @@ class Pokemon {
    
     virtual void attack(Pokemon* enemy,Pokemon* player) = 0;
     int getHealth();
-    int getDefence();
+    double getDefence();
     int getDamage();
 
     void setHealth(int health);
-    void setDefence(int defence);
+    void setDefence(double defence);
     void setDamage(int damage);
 
     virtual ~Pokemon();
