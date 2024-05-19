@@ -18,7 +18,8 @@ char WaterElement::getImmunity() {
 }
 
 virtual void WaterElement::attack(Pokemon* enemy,Pokemon* player) {
-    
+    player->setHealth(player->getHealth()*1.1);
+
     int remainingHealth = enemy->getHealth() - (player->getDamage())*(enemy->getDefence())*(enemy->damageMultiplier());
     
     enemy->setHealth(remainingHealth);
