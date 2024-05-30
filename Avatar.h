@@ -1,9 +1,9 @@
 #ifndef AVATAR_H
 #define AVATAR_H
 
-#include "GameEntity.h"
+#include "GridUnit.h"
 
-class Avatar : public GameEntity{
+class Avatar : public GridUnit{
     public:
     Avatar(int x, int y): GridUnit(x, y, 'A'){}
     
