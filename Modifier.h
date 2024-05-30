@@ -3,7 +3,7 @@
 
 #include "GridUnit.h"
 
-class GridUnit{
+class Modifier{
 public:    
 virtual void apply(GridUnit& unit){}
 };
