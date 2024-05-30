@@ -24,7 +24,7 @@ std::vector<GridUnit*> initGameSession(int numAvatars, int numObstacles, int gri
         int y = std::get<1>(coords);
         grid_.push_back(new Avatar(x,y));
     }
-    for(int i = 0; i < Obstacles;i++){
+    for(int i = 0; i < numObstacles;i++){
         std::tuple<int, int> coords = Helper::generateRandomCoordinates(gridWidth, gridHeight);
         int x = std::get<0>(coords);
         int y = std::get<1>(coords);
@@ -51,7 +51,7 @@ void gameCycle(int maxCycles, double obsatcleActivationDistance){
 
                
                 for(GridUnit* grid2:grid_){
-                    if(grid2->getType()=='M'){
+                    if(grid2->getEntity()=='O'){
                         if Helper::calculateDistance(grid->getCoordinates(), grid2->getCoordinates())<=obsatcleActivationDistance){
                             std::tuple<int, int> coords= grid->getCoordinates();
                             int x = std::get<0>(coords);

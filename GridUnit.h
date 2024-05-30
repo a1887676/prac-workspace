@@ -15,6 +15,8 @@ void setCoordinates(int x, int y){coordinates_ = std::make_tuple(x, y);}
 char getEntity(){return entity_;}
 void setEntity(char e){entity_ = e;}
 
+virtual void shift(int dx, int dy)
+
 };
 
 #endif
