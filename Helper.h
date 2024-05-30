@@ -8,8 +8,8 @@
 class Helper{
     public:
     static std::tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight){
-        int randW = rand()%(gridWidth + 1);
-        int randH = rand()%(gridHeight + 1);
+        int randW = rand()%(gridWidth);
+        int randH = rand()%(gridHeight);
         std::tuple<int, int> randCord = std::make_tuple(randW, randH);
         return randCord;
     }
