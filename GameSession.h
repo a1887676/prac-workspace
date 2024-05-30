@@ -52,7 +52,7 @@ void gameCycle(int maxCycles, double obsatcleActivationDistance){
                
                 for(GridUnit* grid2:grid_){
                     if(grid2->getEntity()=='O'){
-                        if Helper::calculateDistance(grid->getCoordinates(), grid2->getCoordinates())<=obsatcleActivationDistance){
+                        if (Helper::calculateDistance(grid->getCoordinates(), grid2->getCoordinates())<=obsatcleActivationDistance){
                             std::tuple<int, int> coords= grid->getCoordinates();
                             int x = std::get<0>(coords);
                             int y = std::get<1>(coords);
