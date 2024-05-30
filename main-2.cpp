@@ -18,7 +18,7 @@ int main(){
     Obstacle ob(2, 2);
     Avatar ava(1,1);
 
-    Obstacle.apply(ava);
+    ob.apply(ava);
 
     return 0;
 }
