@@ -4,7 +4,7 @@
 #include "GridUnit.h"
 #include "Modifier.h"
 
-class Obstacle : public GridUnit : public Modifier{
+class Obstacle : public GridUnit, public Modifier{
     public:
     Obstacle(int x, int y): GridUnit(x, y, 'O'){}
     
